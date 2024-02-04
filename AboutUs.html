@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>FoodPanda | AboutUs</title>
+	<link rel="stylesheet" type='text/css' media='screen' href="MainCSS.css">
+	<link rel = "icon" href ="Source/Images/Foodpanda-icon-512.png">
+	<!-- Bootstrap CSS v5.2.1 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<style>
+		/*  
+		body{
+			background-image: url(Source/Images/MainPic4.webp)}*/
+		.AboutPlace{
+			width: 100%;
+			height: 25%;
+			color: #333;
+			text-align: center;
+		}
+		.HLine{
+			border: 2.5px;
+			width: 64%;
+			left: 20.6%;	
+			top: 26.3%;
+			position: absolute;
+			z-index: 1;
+            height: 6%;
+            border-style: solid;
+            border-radius: 20px;
+            background-color: rgba(214, 213, 212, 0.2);
+            padding: 0.5px;
+		}
+		.HLine:hover{
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+		.HLine1{
+			border: 2.5px;
+			width: 64%;
+			left: 20.6%;	
+			top: 26.3%;
+			position: absolute;
+			z-index: 1;
+            height: 50%;
+            border-style: solid;
+            border-radius: 20px;
+            padding: 0.5px;
+		}
+		.HLine1:hover{
+			background-color: rgba(56, 55, 51, 0.2);
+		}
+		.MidText{
+			position: absolute;
+			width: 58%;
+			top: 25%;
+			font-size: 20.5px;
+			left: 20%;
+			border: 2px solid;
+            border-color: #ffffff;
+		}
+		.MidText p{
+			margin-left: 4%;
+			margin-right: 4%;
+			color: #fbff00;
+			text-shadow:2px 2px 1px rgb(0, 0, 0);
+			text-align: justify;
+			font-family: "Times New Roman";
+			font-weight: bold;
+		}
+		.MidText h2{
+			text-align: center;
+			color: #fbff00;
+            text-shadow:2px 2px 1px rgb(0, 0, 0);
+			font-family: "Times New Roman";
+		}
+		.logo{
+		position: absolute;
+		padding-top: 18px;
+		left: 0px;
+		width: 110px;
+		height: 35px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0);">
+			<div class="container px-4">
+			  <a class="navbar-brand" href="Index.html">
+				<span style="color:#ffffff; font-size:26px; font-weight:bold; letter-spacing: 1px;">FoodPanda</span>
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+				  class="navbar-toggler-icon"></span></button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				  <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+				  <li class="nav-item"><a class="nav-link" href="restaurants.html">Restaurants</a></li>
+				  <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+				  <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+				  <li class="nav-item"><a class="nav-link" href="Contacts.html">Contacts</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  <!-- Bootstrap JavaScript Libraries For Navbar -->
+		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+			</script>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+			integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+			</script> 
+	   </header>
+    <div class="MidText">
+    	<h2 align="left" style="font-size: 30px;">About FoodPanda</h2>
+    	<p>
+
+			FoodPanda Online Food Delivery makes it incredibly easy for you to discover
+			and get what you want. Delivered to you – quickly, reliably and affordably. 
+			And by doing so, we make cities better places to live. </p>
+		<p>
+			We was launched in early 2017 Since then, FoodPanda has launched in 6 citys Today, 
+			it is the largest on-demand platform founded out of Georgia, having delivered over 3 000 metres orders.
+		</p>
+    </div>
+
+	<!-- FoodPanda Anime -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+	<link href="FoodPandaTXTanim.css" rel="stylesheet">
+	<script src="FoodPandaTXTanim.js"></script>
+  <script type="x-shader/x-vertex" id="vertexshader">
+  
+	attribute float size;
+	attribute vec3 customColor;
+	varying vec3 vColor;
+  
+	void main() {
+  
+	  vColor = customColor;
+	  vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+	  gl_PointSize = size * ( 300.0 / -mvPosition.z );
+	  gl_Position = projectionMatrix * mvPosition;
+  
+	}
+  
+  </script>
+  <script type="x-shader/x-fragment" id="fragmentshader">
+  
+   uniform vec3 color;
+   uniform sampler2D pointTexture;
+  
+   varying vec3 vColor;
+  
+   void main() {
+  
+	 gl_FragColor = vec4( color * vColor, 1.0 );
+	 gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+  
+   }
+  </script>
+	</head>
+	<body>
+	  <div id="magic"></div>
+	  <div class="playground">
+		<div class="bottomPosition">
+		</div>
+	  </div>
+</body>
+</html>
